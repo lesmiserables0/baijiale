@@ -1,0 +1,24 @@
+PODS:
+  - BmobSDK (2.2.8)
+  - JCore (1.1.7)
+  - JPush (3.0.8):
+    - JCore (~> 1.1.7)
+
+DEPENDENCIES:
+  - BmobSDK
+  - JPush
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BmobSDK
+    - JCore
+    - JPush
+
+SPEC CHECKSUMS:
+  BmobSDK: 8ee987736c9b766a688ea8e0274ce4748db2255e
+  JCore: f7459c81c135281a874a6beafdd321666adcc834
+  JPush: 9574d072cc37e93fa293ba69b43ce763c440943a
+
+PODFILE CHECKSUM: 311aca1d229c51717956d3b03aee752382e5d333
+
+COCOAPODS: 1.5.0

@@ -14,5 +14,4 @@
 @property (nonatomic,strong) NSString *webViewURL;
 
 +(instancetype)initWithURL:(NSString *)urlString;
-
-@end
+ @end

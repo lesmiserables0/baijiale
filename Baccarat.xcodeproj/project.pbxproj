@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AFB3B4425C66EC07BED63FD /* libPods-Baccarat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A2E3DCD31D9FF46BEFB397 /* libPods-Baccarat.a */; };
 		210610721EFB613800F8000A /* ZhiNanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210610701EFB613800F8000A /* ZhiNanViewController.m */; };
 		210610731EFB613800F8000A /* ZhiNanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210610711EFB613800F8000A /* ZhiNanViewController.xib */; };
 		2119FDD21EEBF22300E4A1D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2119FDD11EEBF22300E4A1D3 /* main.m */; };
@@ -173,6 +174,8 @@
 		21FB09351EFF5518007E55F8 /* ShuiPingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShuiPingCell.xib; sourceTree = "<group>"; };
 		21FB09361EFF5518007E55F8 /* ShuiPingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuiPingView.h; sourceTree = "<group>"; };
 		21FB09371EFF5518007E55F8 /* ShuiPingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuiPingView.m; sourceTree = "<group>"; };
+		28A2E3DCD31D9FF46BEFB397 /* libPods-Baccarat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baccarat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59868CB62080A6700013FBA2 /* StaticLibTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibTool.h; sourceTree = "<group>"; };
 		59F73814207B572D00DB04E1 /* b12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b12.png; sourceTree = "<group>"; };
 		59F73815207B572D00DB04E1 /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
 		59F73816207B572D00DB04E1 /* b7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b7.png; sourceTree = "<group>"; };
@@ -224,6 +227,8 @@
 		59F73844207B573200DB04E1 /* a4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a4.png; sourceTree = "<group>"; };
 		59F73845207B573200DB04E1 /* c3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c3.png; sourceTree = "<group>"; };
 		59F73846207B573200DB04E1 /* d1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d1.png; sourceTree = "<group>"; };
+		887FF1475776B8E89A06B841 /* Pods-Baccarat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baccarat/Pods-Baccarat.debug.xcconfig"; sourceTree = "<group>"; };
+		B15DD756D91ABE64A89DBB5A /* Pods-Baccarat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baccarat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baccarat/Pods-Baccarat.release.xcconfig"; sourceTree = "<group>"; };
 		CE0B48E1205BD2EA00082A9E /* ADManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADManage.h; sourceTree = "<group>"; };
 		CE0B48E2205BD2EA00082A9E /* ADWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWebViewController.m; sourceTree = "<group>"; };
 		CE0B48E3205BD2EA00082A9E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -238,6 +243,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AFB3B4425C66EC07BED63FD /* libPods-Baccarat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +255,8 @@
 			children = (
 				2119FDCF1EEBF22300E4A1D3 /* Baccarat */,
 				2119FDCE1EEBF22300E4A1D3 /* Products */,
+				E46E1C68F0B238676BFEC252 /* Pods */,
+				C8BD70094D5E5613771C65D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -305,6 +313,7 @@
 				215D44861F0D9B03001F3035 /* SingleViewController.h */,
 				215D44871F0D9B03001F3035 /* SingleViewController.m */,
 				215D44881F0D9B03001F3035 /* SingleViewController.xib */,
+				59868CB62080A6700013FBA2 /* StaticLibTool.h */,
 			);
 			path = Baccarat;
 			sourceTree = "<group>";
@@ -428,6 +437,23 @@
 			path = pokers;
 			sourceTree = "<group>";
 		};
+		C8BD70094D5E5613771C65D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A2E3DCD31D9FF46BEFB397 /* libPods-Baccarat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E46E1C68F0B238676BFEC252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				887FF1475776B8E89A06B841 /* Pods-Baccarat.debug.xcconfig */,
+				B15DD756D91ABE64A89DBB5A /* Pods-Baccarat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,6 +461,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2119FDE41EEBF22400E4A1D3 /* Build configuration list for PBXNativeTarget "Baccarat" */;
 			buildPhases = (
+				2E2081AB2100AEF784430092 /* [CP] Check Pods Manifest.lock */,
 				2119FDC91EEBF22300E4A1D3 /* Sources */,
 				2119FDCA1EEBF22300E4A1D3 /* Frameworks */,
 				2119FDCB1EEBF22300E4A1D3 /* Resources */,
@@ -569,6 +596,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E2081AB2100AEF784430092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Baccarat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2119FDC91EEBF22300E4A1D3 /* Sources */ = {
@@ -711,6 +759,7 @@
 		};
 		2119FDE51EEBF22400E4A1D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887FF1475776B8E89A06B841 /* Pods-Baccarat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -729,6 +778,7 @@
 		};
 		2119FDE61EEBF22400E4A1D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B15DD756D91ABE64A89DBB5A /* Pods-Baccarat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

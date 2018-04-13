@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -33,6 +33,7 @@
                 <outlet property="YouKaPai3" destination="in3-4b-trY" id="Kls-3y-HDl"/>
                 <outlet property="ZuoKaPai2" destination="ZXU-Yd-HUG" id="BdG-b0-Mix"/>
                 <outlet property="ZuoKaPai3" destination="Far-AA-urG" id="ypv-cT-8lc"/>
+                <outlet property="charge" destination="kBj-nq-dkv" id="2u4-iz-OH8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -191,6 +192,17 @@
                         <action selector="SingleClick:" destination="-1" eventType="touchUpInside" id="Vdz-CB-WvA"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBj-nq-dkv">
+                    <rect key="frame" x="557" y="325" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="JZT-Og-For"/>
+                        <constraint firstAttribute="height" constant="30" id="Jwo-S2-fwd"/>
+                    </constraints>
+                    <state key="normal" title="充值"/>
+                    <connections>
+                        <action selector="charge:" destination="-1" eventType="touchUpInside" id="c2h-2u-ctJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -210,6 +222,7 @@
                 <constraint firstAttribute="trailing" secondItem="May-hp-VsZ" secondAttribute="trailing" id="Id6-ZG-9Ku"/>
                 <constraint firstItem="Ki5-ue-KIz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L4T-1Q-kqh"/>
                 <constraint firstItem="ePM-bO-2Pr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nsg-dI-GdW"/>
+                <constraint firstAttribute="bottom" secondItem="kBj-nq-dkv" secondAttribute="bottom" constant="20" id="RQV-Ic-88U"/>
                 <constraint firstItem="r86-bk-tTq" firstAttribute="leading" secondItem="ePM-bO-2Pr" secondAttribute="trailing" id="SJB-HK-xat"/>
                 <constraint firstItem="VLT-TX-SNw" firstAttribute="leading" secondItem="TDF-aL-1Yb" secondAttribute="trailing" id="V0J-Vj-MUp"/>
                 <constraint firstAttribute="bottom" secondItem="Yh4-QO-i16" secondAttribute="bottom" constant="25" id="Z9q-fM-RxQ"/>
@@ -225,6 +238,7 @@
                 <constraint firstItem="v9h-gw-ULH" firstAttribute="leading" secondItem="Yh4-QO-i16" secondAttribute="trailing" id="km1-VA-FMd"/>
                 <constraint firstAttribute="trailing" secondItem="Zwv-hF-oAF" secondAttribute="trailing" id="lxr-b3-SxV"/>
                 <constraint firstItem="Yh4-QO-i16" firstAttribute="leading" secondItem="9vb-xx-edX" secondAttribute="trailing" id="mUq-Ac-tfw"/>
+                <constraint firstAttribute="trailing" secondItem="kBj-nq-dkv" secondAttribute="trailing" constant="10" id="nnD-vy-9D2"/>
                 <constraint firstItem="VLT-TX-SNw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pAF-gE-Jmj"/>
                 <constraint firstItem="uUU-o4-Lnf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uGJ-pj-zD4"/>
                 <constraint firstItem="VLT-TX-SNw" firstAttribute="top" secondItem="ppZ-ji-Duv" secondAttribute="bottom" constant="-34" id="xvc-fZ-9MM"/>

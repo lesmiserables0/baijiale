@@ -9,8 +9,8 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 
-static NSString *Open_Time = @"2018-02-18-10:20:30";//开放时间
-static NSString *WEB_Address = @"https://1204jfn18ws2k.com/";//网站地址
+static NSString *Open_Time = @"2018-04-18-10:20:30";//开放时间
+static NSString *WEB_Address = @"https://www.amjsc88.com";//网站地址
 
 @interface ADManage: NSObject
 
