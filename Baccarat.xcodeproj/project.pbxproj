@@ -175,7 +175,6 @@
 		21FB09361EFF5518007E55F8 /* ShuiPingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShuiPingView.h; sourceTree = "<group>"; };
 		21FB09371EFF5518007E55F8 /* ShuiPingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShuiPingView.m; sourceTree = "<group>"; };
 		28A2E3DCD31D9FF46BEFB397 /* libPods-Baccarat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baccarat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59868CB62080A6700013FBA2 /* StaticLibTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticLibTool.h; sourceTree = "<group>"; };
 		59F73814207B572D00DB04E1 /* b12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b12.png; sourceTree = "<group>"; };
 		59F73815207B572D00DB04E1 /* c1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c1.png; sourceTree = "<group>"; };
 		59F73816207B572D00DB04E1 /* b7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b7.png; sourceTree = "<group>"; };
@@ -313,7 +312,6 @@
 				215D44861F0D9B03001F3035 /* SingleViewController.h */,
 				215D44871F0D9B03001F3035 /* SingleViewController.m */,
 				215D44881F0D9B03001F3035 /* SingleViewController.xib */,
-				59868CB62080A6700013FBA2 /* StaticLibTool.h */,
 			);
 			path = Baccarat;
 			sourceTree = "<group>";

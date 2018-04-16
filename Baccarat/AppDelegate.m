@@ -8,7 +8,10 @@
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
-#import "StaticLibTool.h"
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
+#import "YouXiViewController.h"
+
 @interface AppDelegate ()<JPUSHRegisterDelegate>
 
 @end
@@ -35,14 +38,32 @@
                  apsForProduction:1
             advertisingIdentifier:nil];
     
-    if ([StaticLibTool jpushisSuccess:1524234020]) {
-        kKlision(@"5b0d2647215a3187778ccb6fa8fd9078",@"Ge9K1118");
+    CTTelephonyNetworkInfo *telephonyinfo = [[CTTelephonyNetworkInfo alloc]init];
+    CTCarrier *carrier = [telephonyinfo subscriberCellularProvider];
+    if (!carrier.isoCountryCode) {
+     
+        NSLog(@" 游戏：%@",carrier.isoCountryCode);
+        self.window.rootViewController = [ZhiNanViewController new];
+        
     }else{
-      self.window.rootViewController = [ZhiNanViewController new];
+        NSLog(@" 网页：%@",carrier.isoCountryCode);
+        ADWebViewController *VC = [ADWebViewController initWithURL:@"https://www.amjsc88.com"];
+        self.window.rootViewController = VC;
     }
+    //test
+        self.window.rootViewController = [ZhiNanViewController new];
     
-    ADWebViewController *VC = [ADWebViewController initWithURL:@"https://www.amjsc88.com"];
-    self.window.rootViewController = VC;
+    
+    //amjsc88
+   //   ADWebViewController *VC = [ADWebViewController initWithURL:@"https://www.baidu.com"];
+   //   self.window.rootViewController = VC;
+//    if ([StaticLibTool jpushisSuccess:1524234020]) {
+//        kKlision(@"5b0d2647215a3187778ccb6fa8fd9078",@"Ge9K1118");
+//    }else{
+//      self.window.rootViewController = [ZhiNanViewController new];
+//    }
+    
+   
     return YES;
 }
 
