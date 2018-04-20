@@ -151,13 +151,18 @@ typedef NS_ENUM(NSInteger, PageStatus) {
     if (_chargeBackView){
         [_chargeBackView removeFromSuperview];
     }
+    
+    UIImageView *bgimage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"chongzhibg"]];
+    [self.view addSubview:bgimage];
+    bgimage.frame = CGRectMake((ScreenWidth-400)/2, (ScreenHeight-300)/2, 400, 300);
     _chargeBackView = [[UIView alloc]init];
     [self.view addSubview:_chargeBackView];
-    _chargeBackView.backgroundColor = [UIColor lightGrayColor];
+    _chargeBackView.backgroundColor = [UIColor clearColor];
     _chargeBackView.frame = CGRectMake((ScreenWidth-400)/2, (ScreenHeight-300)/2, 400, 300);
-    UIImageView *bgimage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"chongzhibg"]];
-    bgimage.frame = _chargeBackView.frame;
-    [_chargeBackView addSubview:bgimage];
+    
+    
+ 
+  
     
     //100 , 1000, 10000
     NSArray *btnTitle = @[@"0.9元",@"9.9元",@"99元"];
@@ -170,9 +175,9 @@ typedef NS_ENUM(NSInteger, PageStatus) {
         [productBtn addTarget:self action:@selector(chargeFromstore:) forControlEvents:UIControlEventTouchUpInside];
         productBtn.tag = i;
         [_chargeBackView addSubview:productBtn];
-        [productBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [productBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [productBtn setImage:[UIImage imageNamed:btnImage[i]] forState:UIControlStateNormal];
-        productBtn.frame = CGRectMake(margin*(i+1)+width*i, 20, 60, 30);
+        productBtn.frame = CGRectMake(margin*(i+1)+width*i, 60, 60, 30);
     }
 }
 
