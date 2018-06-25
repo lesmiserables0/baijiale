@@ -159,19 +159,15 @@ typedef NS_ENUM(NSInteger, PageStatus) {
     [self.view addSubview:_chargeBackView];
     _chargeBackView.backgroundColor = [UIColor clearColor];
     _chargeBackView.frame = CGRectMake((ScreenWidth-400)/2, (ScreenHeight-300)/2, 400, 300);
-    
-    
- 
-  
-    
+
     //100 , 1000, 10000
-    NSArray *btnTitle = @[@"0.9元",@"9.9元",@"99元"];
+    NSArray *btnTitle = @[@"0.99元",@"9.5元",@"90元"];
     NSArray *btnImage = @[@"first",@"second",@"third"];
     CGFloat width = 100;
     CGFloat margin = 20;
     for (int i = 0 ; i < btnTitle.count ; i ++){
         UIButton *productBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [productBtn setTitle:@"6元" forState:UIControlStateNormal] ;
+        [productBtn setTitle:btnTitle[i] forState:UIControlStateNormal] ;
         [productBtn addTarget:self action:@selector(chargeFromstore:) forControlEvents:UIControlEventTouchUpInside];
         productBtn.tag = i;
         [_chargeBackView addSubview:productBtn];
